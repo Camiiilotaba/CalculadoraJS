@@ -84,3 +84,28 @@
     color: #fff; 
 }
 
+/* Media queries específicos para iPhone 12 Pro */
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+    .container {
+        width: 90vw;
+        margin: 30px auto;
+    }
+
+    .keys {
+        grid-template-columns: repeat(4, minmax(40px, 1fr));
+    }
+
+    .btn, .operator, .btn-clear, .btn-equal {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
