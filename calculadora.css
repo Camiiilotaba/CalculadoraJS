@@ -1,16 +1,86 @@
+.container {
+    width: 320px;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .screen {
     height: 50px;
-    width: 150px;
+    width: calc(100% - 20px); 
     margin-bottom: 10px;
+    border: 2px solid #181616;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px; 
 }
+
 
 .keys {
-    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
-.btn,
+.btn {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
 .operator {
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #ffa500; 
 }
+
+.btn-clear {
+    grid-column: span 2; 
+}
+
+.btn-equal {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333; 
+    color: #fff; 
+}
+
